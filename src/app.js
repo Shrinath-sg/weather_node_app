@@ -1,6 +1,7 @@
 const express = require("express")
 const geocode = require('/Users/apple/node/weather_app/web_servers/utils/geocode')
 const forecast = require('/Users/apple/node/weather_app/web_servers/utils/forecast')
+const port = process.env.PORT || 3000
 
 const app = express();
 app.get("",(req,res)=>{
@@ -26,5 +27,5 @@ app.get("/weather",(req,res)=>{
     })
 })
 app.listen(3000,()=>{
-    console.log("Started at port 3000");
+    console.log("Started at port" + 3000);
 })
