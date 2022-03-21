@@ -1,6 +1,6 @@
 const express = require("express")
-const geocode = require('/Users/apple/node/weather_app/web_servers/utils/geocode')
-const forecast = require('/Users/apple/node/weather_app/web_servers/utils/forecast')
+const geocode = require('/Users/apple/node/weather_app/web_servers/utils/geocode.js')
+const forecast = require('/Users/apple/node/weather_app/web_servers/utils/forecast.js')
 const port = process.env.PORT || 3000
 
 const app = express();
